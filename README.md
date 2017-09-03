@@ -1,13 +1,16 @@
 # Pipelining_Weather_Data
-# Instruction to Run the code:
-
-- Download Assignment1 folder from github in to your local machine
+# Instruction to get the image:
 
 - To get the images in the local execute: 
    - docker pull sumedh11/assign1adssummer:latest
    - docker pull sumedh11/assign1part2adssummer:latest
    
-## Go in Docker1/FinalDay folder 
+## Building Part1 using Dockerfile1 and pushing to Dockerhub 
+
+-Create an account in Dockerhub and a repository to push the image
+ Repository name here is assign1adssummer
+
+-Set Working Directory to the folder containing only  Part1 and Dockerfile1
 
 -docker build -t image1 .
 
@@ -24,14 +27,14 @@ docker tag image1 sumedh11/assign1adssummer:latest
 -Push your image o docker hub
 docker push sumedh11/assign1adssummer:latest
 
--Pull image
-docker pull sumedh11/assign1adssummer:latest
- - The commit is necessary after each time the image is run so that the data doesnt get lost.
- 
- ## Go in Docker2/Docker2 folder 
+## Building Part2 using Dockerfile2 and pushing to Dockerhub 
 
--Build the image by using this command by settingthe current directory to the dockerfile location
-docker build -t image2 .
+-Create a new Repository to push image for part2
+ Repository name here is assign1part2adssummer
+
+-Set Working Directory to the folder containing only  Part2 and Dockerfile2
+
+-docker build -t image2 .
 
 -Publishing an image to docker Hub
 
@@ -43,17 +46,19 @@ docker login
 -Tag your image to be pushed with repository
 docker tag image2 sumedh11/assign1part2adssummer:latest
 
--Push your image o docker hub
+-Push your image to docker hub
 docker push sumedh11/assign1part2adssummer:latest
 
--Pull image
-docker pull sumedh11/assign1part2adssummer:latest
+## Running Part1 and Part2 at once using makefile
+-Execute the following command by going into the directory containing Part1,Part2,makefile
+make -f makefile
+
 
 # Insights in EDA before cleansing vs after cleansing
 
 ## Analysis1:
 Maximum aggregate Dry bulb Temperature on monthly basis:
-<img src="Imagesofgraphs/Capture.PNG">
+<img src="Graphs/Capture.PNG">
 
 - We can observe from the graph that the maximum temperature was in 5th i.e. May month and minimum Dry bulb temp in 2nd i.e. February month
 #### After cleansing
@@ -83,7 +88,7 @@ time          | period
 4 pm - 8pm    | evening
 8 pm - 12 am  | night
 
-<img src="Imagesofgraphs/Capture2.PNG">
+<img src="Graphs/Capture2.PNG">
 
 - The windspeed tends to be maximum at the morning time and least at night time that we can infer from this analysis
 
