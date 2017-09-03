@@ -1,0 +1,9 @@
+{
+	"state": "TX",
+	"team": 4,
+	"cleanData": "https://s3-us-west-2.amazonaws.com/cleandatasummerads/TX_170617_WBAN_13910_clean.csv",
+	"rawData": "https://s3-us-west-2.amazonaws.com/rawdatatea4adssummer/TX_170617_WBAN_13910.csv",
+	"AWSAccess"",
+    "AWSSecret":"",
+	"notificationEmail": "sumedhsaraf.s@gmail.com"
+}
