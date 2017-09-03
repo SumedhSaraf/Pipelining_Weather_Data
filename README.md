@@ -51,7 +51,7 @@ docker push sumedh11/assign1part2adssummer:latest
 
 ## Running Part1 and Part2 at once using makefile
 -Execute the following command by going into the directory containing Part1,Part2,makefile
-make -f makefile
+-make -f makefile
 
 
 # Insights in EDA before cleansing vs after cleansing
