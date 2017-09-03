@@ -1,0 +1,10 @@
+FROM python
+RUN pip install requests pandas boto3 botocore boto arrow jupyter notebook matplotlib scipy
+COPY ./Part2/configWrangle.json /
+COPY ./Part2/Wrangle.py / 
+COPY ./Part2/run.sh /
+COPY ./Part2/logger.log /
+COPY ./Part2/TX_170617_WBAN_13910_cleanl.csv /
+COPY ./Part2/cleanDataEDA.ipynb /
+ENTRYPOINT  ["bash", "run.sh"]
+
