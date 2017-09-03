@@ -1,0 +1,21 @@
+{
+  "stationID": "WBAN_13910",
+  "state": "TX",
+  "team": 4,
+  "AWSAccess":"your credentials",
+  "AWSSecret":"your credentials",
+  "notificationEmail":"sumedhsaraf.s@gmail.com",
+  
+	"links": {
+		"array" : [ "https://www.ncei.noaa.gov/orders/cdo/995685.csv",
+		"https://www.ncei.noaa.gov/orders/cdo/995697.csv",
+		"https://www.ncei.noaa.gov/orders/cdo/995702.csv",
+		"https://www.ncei.noaa.gov/orders/cdo/995708.csv",
+		"https://www.ncei.noaa.gov/orders/cdo/995715.csv",
+		"https://www.ncei.noaa.gov/orders/cdo/995864.csv",
+		"https://www.ncei.noaa.gov/orders/cdo/995692.csv",
+		"https://www.ncei.noaa.gov/orders/cdo/995696.csv",
+		"https://www.ncei.noaa.gov/orders/cdo/995698.csv"]
+	}
+
+}
