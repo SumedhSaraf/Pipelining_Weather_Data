@@ -1,0 +1,10 @@
+FROM python
+RUN pip install requests pandas boto3 botocore boto arrow jupyter notebook
+COPY ./Part1/config.json /
+COPY ./Part1/dataIngestion.py / 
+COPY ./Part1/run.sh /
+COPY ./Part1/logger.log /
+COPY ./Part1/TX_170617_WBAN_13910l.csv /
+COPY ./Part1/rawDataEDA.ipynb /
+ENTRYPOINT  ["bash", "run.sh"]
+
