@@ -1,4 +1,7 @@
 # Pipelining_Weather_Data
+
+- Data can be dowloaded from https://www.ncdc.noaa.gov/cdo-web/datatools/lcd by selecting Texas state and the dates
+
 # Instruction to get the image:
 
 - To get the images in the local execute: 
